@@ -5,13 +5,16 @@ body {
   font-family: Helvetica;
   font-style: 18px;
   margin: 0px;
-  background-color: black;
+  background-color: dimgray;
 }
 
 .grid {
   display: grid;
   grid-template-rows: auto auto auto auto auto;
-}
+  background-color: black;
+  width: 100%;
+  max-width: 1080px;
+  }
 
 .grid div {
   /*border: 1px solid blue;
@@ -21,21 +24,30 @@ body {
   padding: 0;
 }
 
-
-.header {
-  height: 5rem;
-  display: inline-flex;
-  align-items: center;
-  background-color: black;
+.margin-left {
+  margin-left: 10%;
 }
 
-.header h3 {
-  color: white;
+.margin-right {
+  margin-right: 10%;
+}
+
+.header {
+  display: inline-flex;
+  align-items: center;
+}
+
+.header h3,img {
+  padding: .66rem 0;
+
 }
 
 .header img {
   height: 1.5rem;
+  padding-left: .5rem;
+  padding-right: 1rem;
 }
+
 
 
 .banner {
@@ -43,31 +55,37 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   height: 25rem;
-  width: 1080px;
 }
 
 
 .title {
-  width: 20rem;
-  padding: 2rem 3rem;
+  width: 25rem;
   font-weight: bold;
-  margin-top: 9rem;
   background-color: black;
 }
 
 .title h4 {
   font-size: 1rem;
+  margin: 9rem 0 0 0;
+  padding-top: 2rem;
 }
 
 .title h1 {
   font-size: 2rem;
+  margin: 0;
+  padding-top: .25rem;
+  padding-bottom: 2rem;
+}
+
+.title h4,h1 {
+  padding-left: 3rem;
 }
 
 nav {
   height: 3rem;
   background-color: firebrick;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 0rem 6rem;
 }
@@ -76,49 +94,78 @@ nav a {
   color: white;
   font-style: normal;
   text-decoration: none;
-  padding: 5em 2em;
+  padding: 5em 0;
 }
 
 .store {
   display: grid;
   grid-template-rows: auto auto;
   background-color: WHITE;
+
 }
 
-.product {
+
+.products {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
-.product img {
-  height: 9rem;
+.product {
+  width: 30%;
+  max-width: 12rem;
+  display: block;
+  margin-top: 3rem;
+}
+
+.product-image {
+  height: 9em;
+  border: 4px solid black;
   padding: 2em 0;
-}
-
-.product span {
-  background-color: black;
-  padding: 0.5rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.info {
+.product-image img {
+  max-width: 8em;
+}
+
+.product span {
+  background-color: black;
+  color: white;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .5rem 0;
+}
+
+.information {
   display: grid;
-  grid-template-columns: 1fr 1fr
+  grid-template-columns: auto auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   /*grid-template-rows: auto auto;*/
+}
+
+.info {
+  width: 35%;
+  margin: 3rem 0 4rem 0;
 }
 
 .info h4 {
   background-color: black;
+  padding: 1rem 2rem;
 }
 
 .info p {
   color: black;
 }
+
 
 footer {
   height: 5rem;
