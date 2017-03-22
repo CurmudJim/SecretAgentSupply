@@ -3,23 +3,64 @@ body {
   align-items: center;
   justify-content: center;
   font-family: Helvetica;
+  font-style: 18px;
   margin: 0px;
   background-color: black;
 }
-header {
+
+.grid {
+  display: grid;
+  grid-template-rows: auto auto auto auto auto;
+}
+
+.grid div {
+  /*border: 1px solid blue;
+  border-radius: 3px;
+  background-color: red;*/
+  color: white;
+  padding: 0;
+}
+
+
+.header {
   height: 5rem;
-  width: 100%;
   display: inline-flex;
   align-items: center;
   background-color: black;
 }
 
-header h3 {
+.header h3 {
   color: white;
 }
 
-header img {
+.header img {
   height: 1.5rem;
+}
+
+
+.banner {
+  background-image: url("../images/moto.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 25rem;
+  width: 1080px;
+}
+
+
+.title {
+  width: 20rem;
+  padding: 2rem 3rem;
+  font-weight: bold;
+  margin-top: 9rem;
+  background-color: black;
+}
+
+.title h4 {
+  font-size: 1rem;
+}
+
+.title h1 {
+  font-size: 2rem;
 }
 
 nav {
@@ -35,7 +76,62 @@ nav a {
   color: white;
   font-style: normal;
   text-decoration: none;
+  padding: 5em 2em;
 }
+
+.store {
+  display: grid;
+  grid-template-rows: auto auto;
+  background-color: WHITE;
+}
+
+.product {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  display: flex;
+  justify-content: center;
+}
+
+.product img {
+  height: 9rem;
+  padding: 2em 0;
+}
+
+.product span {
+  background-color: black;
+  padding: 0.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: 1fr 1fr
+  /*grid-template-rows: auto auto;*/
+}
+
+.info h4 {
+  background-color: black;
+}
+
+.info p {
+  color: black;
+}
+
+footer {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+}
+
+
+/*
+
+
+
+
 
 footer {
   background: black;
@@ -107,4 +203,4 @@ footer {
 
 .capitalize {
   text-transform: capitalize;
-}
+}*/
